@@ -85,7 +85,7 @@ def main(params):
     if model.model_name == "rkt":
         window_testauc, window_testacc = evaluate(model, test_window_loader, model_name, rel, save_test_window_path)
     else:
-        window_testauc, window_testacc = evaluate(model, test_window_loader, model_name, save_test_window_path)
+        window_testauc, window_testacc = evaluate(model, test_window_loader, model_name, None, save_test_window_path)
     print(f"testauc: {testauc}, testacc: {testacc}, window_testauc: {window_testauc}, window_testacc: {window_testacc}")
 
     # question_testauc, question_testacc = -1, -1
